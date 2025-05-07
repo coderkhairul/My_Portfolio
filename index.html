@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Khairul Islam - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  
+  <!-- Google Translate Widget -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,bn,es,fr,de,it,ja,pt,ru,zh-CN',  // Add any language codes you want
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Language Selector (Google Translate Widget) -->
+  <div class="text-right p-4">
+    <div id="google_translate_element"></div>
+  </div>
+
+  <!-- Hero Section with Profile -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <img src="profile.jpg" alt="Md. Khairul Islam" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" />
+      <h1 class="text-4xl font-bold mb-2">Md. Khairul Islam</h1>
+      <p class="text-xl">Future Software Engineer | Python Learner | Graphic Designer</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-4xl mx-auto my-12 p-4">
+    <h2 class="text-2xl font-bold mb-4 border-b pb-2">About Me</h2>
+    <p class="text-lg leading-relaxed">I am Md. Khairul Islam, an aspiring technology enthusiast on the path to becoming a software engineer. Currently, I am halfway through learning Python and constantly acquiring new technologies and tools. In addition, I work as a proficient graphic designer.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="max-w-4xl mx-auto my-12 p-4">
+    <h2 class="text-2xl font-bold mb-4 border-b pb-2">Skills</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <div class="bg-white p-4 rounded shadow text-center">HTML</div>
+      <div class="bg-white p-4 rounded shadow text-center">CSS</div>
+      <div class="bg-white p-4 rounded shadow text-center">JavaScript</div>
+      <div class="bg-white p-4 rounded shadow text-center">Python (Learning)</div>
+      <div class="bg-white p-4 rounded shadow text-center">Git & GitHub</div>
+      <div class="bg-white p-4 rounded shadow text-center">Graphic Design</div>
+    </div>
+  </section>
+
+  <!-- Graphic Design Section -->
+  <section id="graphics" class="max-w-4xl mx-auto my-12 p-4">
+    <h2 class="text-2xl font-bold mb-4 border-b pb-2">Graphic Design</h2>
+    <p class="mb-4">I perform the following tasks using Adobe Photoshop, Illustrator, and InDesign.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <h3 class="font-semibold text-lg mb-2">Mostly Expert:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>E-mail Signature Design & Develop</li>
+          <li>HTML E-mail Signature Design & Develop</li>
+        </ul>
+        <h3 class="font-semibold text-lg mt-4 mb-2">Social Media Design:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Facebook, Linkedin, Twitter, Instagram, Pinterest, Youtube</li>
+        </ul>
+        <h3 class="font-semibold text-lg mt-4 mb-2">Other Design:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Business Card, Brochure, Banner, Letterhead</li>
+          <li>T-Shirt, Book Cover, Menu Card, Stationery</li>
+          <li>Rack Card, Logo, Company Profile, 3D, Flyer, Trifold, Roll-Up Banner</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg mb-2">Image Editing:</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Clipping Path, Background Remove, Shadow</li>
+          <li>Hair Masking, Object Remove, Color Correction</li>
+          <li>Cloth Wrinkle Remove, Retouching</li>
+          <li>Glass Reflection, Neck Joint, Jewellery Retouching</li>
+          <li>Image Restoration, Resize Any Image</li>
+        </ul>
+        <p class="mt-4">🖼️ Behance Portfolio: <a href="https://www.behance.net/designkhairul" class="text-blue-600 hover:underline">behance.net/designkhairul</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-4xl mx-auto my-12 p-4">
+    <h2 class="text-2xl font-bold mb-4 border-b pb-2">Projects</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="text-lg font-semibold mb-1">Project Name</h3>
+        <p>Created a basic website using HTML and CSS.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-4xl mx-auto my-12 p-4">
+    <h2 class="text-2xl font-bold mb-4 border-b pb-2">Contact</h2>
+    <p class="mb-2">📧 Email: your.email@example.com</p>
+    <p>🔗 GitHub: <a href="https://github.com/coderkhairul" class="text-blue-600 hover:underline">github.com/coderkhairul</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white p-4 text-center text-sm text-gray-500">
+    © 2025 Md. Khairul Islam - All Rights Reserved
+  </footer>
+</body>
+</html>
