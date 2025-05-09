@@ -4,9 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Md. Khairul Islam - Portfolio</title>
-  <link rel="icon" type="image/jpeg" href=""profile.jpg"">
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/jpeg" href="profile.jpg" />
+
+  <!-- Tailwind CSS & Fonts -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <script>
     tailwind.config = {
       theme: {
@@ -18,27 +22,57 @@
       }
     }
   </script>
-  
-  <!-- Google Translate Widget -->
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- ✅ Custom Language Switcher -->
+  <div class="flex justify-end p-4">
+    <select id="languageSwitcher" onchange="translateLanguage(this.value)"
+      class="border border-gray-300 rounded px-3 py-1 text-sm shadow-sm bg-white">
+      <option value="">🌐 Select Language</option>
+      <option value="en">🇺🇸 English</option>
+      <option value="bn">🇧🇩 বাংলা</option>
+      <option value="es">🇪🇸 Español</option>
+      <option value="fr">🇫🇷 Français</option>
+      <option value="de">🇩🇪 Deutsch</option>
+      <option value="it">🇮🇹 Italiano</option>
+      <option value="ja">🇯🇵 日本語</option>
+      <option value="pt">🇵🇹 Português</option>
+      <option value="ru">🇷🇺 Русский</option>
+      <option value="zh-CN">🇨🇳 中文</option>
+    </select>
+  </div>
+
+  <!-- ✅ Google Translate Hidden Element -->
+  <div id="google_translate_element" style="display: none;"></div>
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
         pageLanguage: 'en',
-        includedLanguages: 'en,bn,es,fr,de,it,ja,pt,ru,zh-CN',  // Add any language codes you want
+        includedLanguages: 'en,bn,es,fr,de,it,ja,pt,ru,zh-CN',
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
       }, 'google_translate_element');
     }
+
+    function translateLanguage(lang) {
+      const gtFrame = document.querySelector('iframe.goog-te-menu-frame');
+      if (gtFrame) {
+        const innerDoc = gtFrame.contentDocument || gtFrame.contentWindow.document;
+        const langElements = innerDoc.querySelectorAll('.goog-te-menu2-item span.text');
+        for (let i = 0; i < langElements.length; i++) {
+          if (langElements[i].innerText.toLowerCase().includes(lang.toLowerCase())) {
+            langElements[i].click();
+            break;
+          }
+        }
+      }
+    }
   </script>
-  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
 
-  <!-- Language Selector (Google Translate Widget) -->
-  <div class="text-right p-4">
-    <div id="google_translate_element"></div>
-  </div>
-
-  <!-- Hero Section with Profile -->
+  <!-- Hero Section -->
   <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
     <div class="max-w-4xl mx-auto text-center px-4">
       <img src="profile.jpg" alt="Md. Khairul Islam" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" />
@@ -81,7 +115,7 @@
         </ul>
         <h3 class="font-semibold text-lg mt-4 mb-2">Social Media Design:</h3>
         <ul class="list-disc list-inside space-y-1">
-          <li>Facebook, LinkedIn, Twitter, Instagram, Pinterest, YouTube </li>
+          <li>Facebook, LinkedIn, Twitter, Instagram, Pinterest, YouTube</li>
         </ul>
         <h3 class="font-semibold text-lg mt-4 mb-2">Other Design:</h3>
         <ul class="list-disc list-inside space-y-1">
@@ -104,16 +138,61 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
+   <!-- Projects Section -->
   <section id="projects" class="max-w-4xl mx-auto my-12 p-4">
     <h2 class="text-2xl font-bold mb-4 border-b pb-2">Projects</h2>
-    <div class="grid gap-6 md:grid-cols-2">
-      <div class="bg-white p-4 rounded shadow">
-        <h3 class="text-lg font-semibold mb-1">Project Name</h3>
-        <p>Created a basic website using HTML and CSS.</p>
-      </div>
+    <div id="github-projects" class="grid gap-6 md:grid-cols-2">
+      <!-- GitHub projects will be loaded here -->
     </div>
   </section>
+
+  <script>
+    // GitHub Username
+    const githubUsername = "coderkhairul"; // তোমার GitHub ইউজারনেম এখানে রাখো
+
+    // GitHub API URL
+    const apiURL = `https://api.github.com/users/${githubUsername}/repos`;
+
+    // Function to fetch and display projects from GitHub
+    async function fetchGitHubProjects() {
+      try {
+        const response = await fetch(apiURL);
+        const data = await response.json();
+
+        const projectsContainer = document.getElementById("github-projects");
+
+        data.forEach(project => {
+          const projectCard = document.createElement("div");
+          projectCard.classList.add("bg-white", "p-4", "rounded", "shadow");
+
+          const projectTitle = document.createElement("h3");
+          projectTitle.classList.add("text-lg", "font-semibold", "mb-1");
+          projectTitle.textContent = project.name;
+
+          const projectDesc = document.createElement("p");
+          projectDesc.textContent = project.description || "No description provided.";
+
+          const projectLink = document.createElement("a");
+          projectLink.href = project.html_url;
+          projectLink.target = "_blank";
+          projectLink.classList.add("text-blue-600", "hover:underline");
+          projectLink.textContent = "View Project";
+
+          projectCard.appendChild(projectTitle);
+          projectCard.appendChild(projectDesc);
+          projectCard.appendChild(projectLink);
+
+          projectsContainer.appendChild(projectCard);
+        });
+      } catch (error) {
+        console.error("Error fetching GitHub projects:", error);
+      }
+    }
+
+    // Fetch GitHub Projects when page loads
+    window.onload = fetchGitHubProjects;
+  </script>
+
 
   <!-- Contact Section -->
   <section id="contact" class="max-w-4xl mx-auto my-12 p-4">
@@ -126,5 +205,6 @@
   <footer class="bg-white p-4 text-center text-sm text-gray-500">
     © 2025 Md. Khairul Islam - All Rights Reserved
   </footer>
+
 </body>
 </html>
