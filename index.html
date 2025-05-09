@@ -137,10 +137,31 @@
       </div>
     </div>
   </section>
-
+<!-- Behance Projects Section -->
+<section id="behance-projects" class="max-w-4xl mx-auto my-12 p-4">
+  <h2 class="text-2xl font-bold mb-4 border-b pb-2">My Behance Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Project 1 -->
+    <div class="bg-white p-4 rounded shadow">
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe src="https://www.behance.net/embed/project/92348513?ilo0=1" frameborder="0" allowfullscreen class="w-full h-64"></iframe>
+      </div>
+      <h3 class="text-lg font-semibold mt-2">Project Title 1</h3>
+      <a href="https://www.behance.net/gallery/123456789/Project-Title-1" target="_blank" class="text-blue-600 hover:underline">View on Behance</a>
+    </div>
+    <!-- Project 2 -->
+    <div class="bg-white p-4 rounded shadow">
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe src="https://www.behance.net/embed/project/90064153?ilo0=1" frameborder="0" allowfullscreen class="w-full h-64"></iframe>
+      </div>
+      <h3 class="text-lg font-semibold mt-2">Project Title 2</h3>
+      <a href="https://www.behance.net/gallery/987654321/Project-Title-2" target="_blank" class="text-blue-600 hover:underline">View on Behance</a>
+    </div>
+  </div>
+</section>
    <!-- Projects Section -->
   <section id="projects" class="max-w-4xl mx-auto my-12 p-4">
-    <h2 class="text-2xl font-bold mb-4 border-b pb-2">Projects</h2>
+    <h2 class="text-2xl font-bold mb-4 border-b pb-2">My Github Projects</h2>
     <div id="github-projects" class="grid gap-6 md:grid-cols-2">
       <!-- GitHub projects will be loaded here -->
     </div>
@@ -148,7 +169,7 @@
 
   <script>
     // GitHub Username
-    const githubUsername = "coderkhairul"; // তোমার GitHub ইউজারনেম এখানে রাখো
+    const githubUsername = "coderkhairul";
 
     // GitHub API URL
     const apiURL = `https://api.github.com/users/${githubUsername}/repos`;
