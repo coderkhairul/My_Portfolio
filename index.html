@@ -237,6 +237,83 @@
         </ul>
       </ol>
     </ul>
+    <div class="container hidden" id="mainContent">
+    <h1>👤 Personal Dashboard</h1>
+    <p id="datetime"></p>
+    <textarea id="noteArea" placeholder="Write your personal notes here..."></textarea>
+    <button onclick="saveNote()">💾 Save</button>
+    <button onclick="logout()">🚪 Logout</button>
+    <hr>
+    <h3>📂 My Files & Links</h3>
+    <ul>
+      <li><a href="diary/index.html" target="_blank">📖 Personal Diary</a></li>
+      <li><a href="projects/index.html" target="_blank">💻 Projects</a></li>
+      <li><a href="documents/resume.pdf" target="_blank">📄 My Resume</a></li>
+      <li><a href="images/" target="_blank">🖼️ Image Folder</a></li>
+    </ul>
+    <hr>
+    <h3>🔑 Change Password</h3>
+    <input type="password" id="newPass" placeholder="Enter new password">
+    <button onclick="changePassword()">Update Password</button>
+  </div>
+
+  <script>
+    const storedPassword = localStorage.getItem("my_password") || "AAAAQwAAAFMAAABFAAAAMgAAADMAAAAwAAAAMgAAADAAAAAyAAAAOQAAADAAAAAzAAAANA==";
+    let attempts = 0;
+
+    function showDateTime() {
+      const now = new Date();
+      const datetime = now.toLocaleString();
+      document.getElementById("datetime").innerText = "Login time: " + datetime;
+    }
+
+    function saveNote() {
+      const note = document.getElementById("noteArea").value;
+      localStorage.setItem("my_note", note);
+      alert("✅ Note saved successfully!");
+    }
+
+    function loadNote() {
+      const savedNote = localStorage.getItem("my_note") || "";
+      document.getElementById("noteArea").value = savedNote;
+    }
+
+    function logout() {
+      alert("🚪 You have been logged out.");
+      location.reload();
+    }
+
+    function changePassword() {
+      const newPass = document.getElementById("newPass").value.trim();
+      if (newPass.length < 4) {
+        alert("❗ Password must be at least 4 characters!");
+        return;
+      }
+      localStorage.setItem("my_password", newPass);
+      alert("✅ Password updated successfully!");
+    }
+
+    function askPassword() {
+      while (attempts < 3) {
+        const input = prompt("🔐 Enter password:");
+        if (input === storedPassword) {
+          document.getElementById("mainContent").classList.remove("hidden");
+          showDateTime();
+          loadNote();
+          return;
+        } else {
+          attempts++;
+          if (attempts < 3) {
+            alert("❌ Wrong password! Remaining attempts: " + (3 - attempts));
+          }
+        }
+      }
+      alert("🚫 3 wrong attempts! Redirecting to main site.");
+      window.location.href = "https://coderkhairul.netlify.app/";
+    }
+
+    window.onload = askPassword;
+  </script>
   </section>
 
   <!-- Contact Section -->
