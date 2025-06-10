@@ -213,6 +213,64 @@
     // Fetch GitHub Projects when the page loads
     window.onload = fetchGitHubProjects;
   </script>
+  <!-- LeetCode Summary Section -->
+<section id="leetcode" style="padding: 60px 20px; background: #f9fafc; font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 900px; margin: auto; text-align: center;">
+    <h2 style="font-size: 36px; color: #222; margin-bottom: 20px;">🚀 Problem Solving Journey</h2>
+    <p style="font-size: 18px; color: #444; line-height: 1.7;">
+      I'm a competitive programming enthusiast currently solving problems on LeetCode using <strong>Python</strong>, transitioning from C/C++. Though I've started with just <strong>1 solved problem</strong>, my goal is to master <strong>Data Structures & Algorithms</strong> and become interview-ready. I believe that every step counts — and I'm committed to steady progress.
+    </p>
+
+    <!-- Chart Container -->
+    <canvas id="leetcodeChart" width="300" height="300" style="margin-top: 30px;"></canvas>
+
+    <a href="https://leetcode.com/u/programmerkhairul/" target="_blank"
+       style="display: inline-block; margin-top: 30px; padding: 12px 24px; background: #FFA116; color: #fff;
+              border-radius: 8px; font-size: 16px; text-decoration: none; transition: 0.3s ease;">
+      🔗 View My LeetCode Profile
+    </a>
+  </div>
+</section>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('leetcodeChart').getContext('2d');
+  const leetcodeChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Easy', 'Medium', 'Hard'],
+      datasets: [{
+        label: 'Problems Solved',
+        data: [1, 0, 0], // Update this as your progress grows
+        backgroundColor: [
+          'rgba(54, 162, 235, 0.7)',
+          'rgba(255, 206, 86, 0.7)',
+          'rgba(255, 99, 132, 0.7)'
+        ],
+        borderColor: [
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(255, 99, 132, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'bottom',
+        },
+        title: {
+          display: true,
+          text: 'LeetCode Problem Breakdown'
+        }
+      }
+    }
+  });
+</script>
   <!-- 📚 Personal Resources Section -->
   <section id="personal-resources" class="max-w-4xl mx-auto my-12 p-4">
     <h2 class="text-2xl font-bold mb-4 border-b pb-2">📚 Personal Resources</h2>
