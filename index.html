@@ -25,52 +25,6 @@
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-sans">
-  <!-- ✅ Custom Language Switcher -->
-  <div class="flex justify-end p-4">
-    <select id="languageSwitcher" onchange="translateLanguage(this.value)"
-      class="border border-gray-300 rounded px-3 py-1 text-sm shadow-sm bg-white">
-      <option value="">🌐 Select Language</option>
-      <option value="en">🇺🇸 English</option>
-      <option value="bn">🇧🇩 বাংলা</option>
-      <option value="es">🇪🇸 Español</option>
-      <option value="fr">🇫🇷 Français</option>
-      <option value="de">🇩🇪 Deutsch</option>
-      <option value="it">🇮🇹 Italiano</option>
-      <option value="ja">🇯🇵 日本語</option>
-      <option value="pt">🇵🇹 Português</option>
-      <option value="ru">🇷🇺 Русский</option>
-      <option value="zh-CN">🇨🇳 中文</option>
-    </select>
-  </div>
-
-  <!-- ✅ Google Translate Hidden Element -->
-  <div id="google_translate_element" style="display: none;"></div>
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: 'en,bn,es,fr,de,it,ja,pt,ru,zh-CN',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-        autoDisplay: false
-      }, 'google_translate_element');
-    }
-
-    function translateLanguage(lang) {
-      const gtFrame = document.querySelector('iframe.goog-te-menu-frame');
-      if (gtFrame) {
-        const innerDoc = gtFrame.contentDocument || gtFrame.contentWindow.document;
-        const langElements = innerDoc.querySelectorAll('.goog-te-menu2-item span.text');
-        for (let i = 0; i < langElements.length; i++) {
-          if (langElements[i].innerText.toLowerCase().includes(lang.toLowerCase())) {
-            langElements[i].click();
-            break;
-          }
-        }
-      }
-    }
-  </script>
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
-
   <!-- Hero Section -->
   <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
     <div class="max-w-4xl mx-auto text-center px-4">
