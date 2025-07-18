@@ -1,616 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md. Khairul Islam - Portfolio</title>
 
-  <!-- ✅ Favicon -->
-  <link rel="icon" type="image/jpeg" href="profile.jpg" />
 
-  <!-- Tailwind CSS & Fonts -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-          },
-        },
-      }
-    }
-  </script>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Md. Khairul Islam | Portfolio</title>
 
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
-    <div class="max-w-4xl mx-auto text-center px-4">
-      <img src="profile.jpg" alt="Md. Khairul Islam" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg" />
-      <h1 class="text-4xl font-bold mb-2">Md. Khairul Islam</h1>
-      <p class="text-xl">Frontend Developer (React) | Aspiring Software Engineer | Python Learner | Graphic Designer</p>
-    </div>
-  </section>
+		<!-- ✅ Favicon -->
+  		<link rel="icon" type="image/jpeg" href="images/profile.jpg" />
+	
+		<!-- box icons -->
+	
+		<!-- custom css -->
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"
+	</head>
 
-  <!-- About Section -->
-  <section id="about" class="max-w-4xl mx-auto my-12 p-4">
-    <h2 class="text-2xl font-bold mb-4 border-b pb-2">About Me</h2>
-    <p class="text-lg leading-relaxed">I'm Md. Khairul Islam is an aspiring technology enthusiast on the path to becoming a software engineer. I am halfway through learning Python and constantly acquiring new technologies and tools. In addition, I work as a proficient graphic designer.</p>
-  </section>
+	<body>
 
-  <!-- Skills Section -->
-  <section id="skills" class="max-w-4xl mx-auto my-12 p-4">
-    <h2 class="text-2xl font-bold mb-4 border-b pb-2">Skills</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-      <div class="bg-white p-4 rounded shadow text-center">HTML</div>
-      <div class="bg-white p-4 rounded shadow text-center">CSS</div>
-      <div class="bg-white p-4 rounded shadow text-center">TailWind CSS</div>
-      <div class="bg-white p-4 rounded shadow text-center">JavaScript</div>
-      <div class="bg-white p-4 rounded shadow text-center">React</div>
-      <div class="bg-white p-4 rounded shadow text-center">C</div>
-      <div class="bg-white p-4 rounded shadow text-center">C++</div>
-      <div class="bg-white p-4 rounded shadow text-center">Git & GitHub</div>
-      <div class="bg-white p-4 rounded shadow text-center">Graphic Design</div>
-      <div class="bg-white p-4 rounded shadow text-center">Python (Learning)</div>
-    </div>
-  </section>
+		<!-- header design -->
+		<header class="header">
+			<a href="#" class="logo">Portfolio</a>
 
-  <!-- Graphic Design Section -->
-  <section id="graphics" class="max-w-4xl mx-auto my-12 p-4">
-    <h2 class="text-2xl font-bold mb-4 border-b pb-2">Graphic Design</h2>
-    <p class="mb-4">I perform the following tasks using Adobe Photoshop, Illustrator, and InDesign.</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div>
-        <h3 class="font-semibold text-lg mb-2">Mostly Expert:</h3>
-        <ul class="list-disc list-inside space-y-1">
-          <li>E-mail Signature Design & Develop</li>
-          <li>HTML E-mail Signature Design & Develop</li>
-        </ul>
-        <h3 class="font-semibold text-lg mt-4 mb-2">Social Media Design:</h3>
-        <ul class="list-disc list-inside space-y-1">
-          <li>Facebook, LinkedIn, Twitter, Instagram, Pinterest, YouTube</li>
-        </ul>
-        <h3 class="font-semibold text-lg mt-4 mb-2">Other Design:</h3>
-        <ul class="list-disc list-inside space-y-1">
-          <li>Business Card, Brochure, Banner, Letterhead</li>
-          <li>T-Shirt, Book Cover, Menu Card, Stationery</li>
-          <li>Rack Card, Logo, Company Profile, 3D, Flyer, Trifold, Roll-Up Banner</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="font-semibold text-lg mb-2">Image Editing:</h3>
-        <ul class="list-disc list-inside space-y-1">
-          <li>Clipping Path, Background Remove, Shadow</li>
-          <li>Hair Masking, Object Remove, Colour Correction</li>
-          <li>Cloth Wrinkle Remove, Retouching</li>
-          <li>Glass Reflection, Neck Joint, Jewellery Retouching</li>
-          <li>Image Restoration, Resize Any Image</li>
-        </ul>
-        <p class="mt-4">🖼️ Behance Portfolio: <a href="https://www.behance.net/designkhairul" class="text-blue-600 hover:underline">behance.net/designkhairul</a></p>
-      </div>
-    </div>
-  </section>
-<!-- Behance Projects Section -->
-<section id="behance-projects" class="max-w-4xl mx-auto my-12 p-4">
-  <h2 class="text-2xl font-bold mb-4 border-b pb-2">My Behance Projects</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <!-- Project 1 -->
-    <div class="bg-white p-4 rounded shadow">
-      <div class="aspect-w-16 aspect-h-9">
-        <iframe src="https://www.behance.net/embed/project/92348513?ilo0=1" frameborder="0" allowfullscreen class="w-full h-64"></iframe>
-      </div>
-      <h3 class="text-lg font-semibold mt-2">Custom T-Shirt Design</h3>
-      <a href="https://www.behance.net/gallery/123456789/Project-Title-1" target="_blank" class="text-blue-600 hover:underline">View on Behance</a>
-    </div>
-    <!-- Project 2 -->
-    <div class="bg-white p-4 rounded shadow">
-      <div class="aspect-w-16 aspect-h-9">
-        <iframe src="https://www.behance.net/embed/project/90064153?ilo0=1" frameborder="0" allowfullscreen class="w-full h-64"></iframe>
-      </div>
-      <h3 class="text-lg font-semibold mt-2">Abstract logo marks</h3>
-      <a href="https://www.behance.net/gallery/987654321/Project-Title-2" target="_blank" class="text-blue-600 hover:underline">View on Behance</a>
-    </div>
-  </div>
-</section>
-   <!-- Projects Section -->
-  <section id="projects" class="max-w-4xl mx-auto my-12 p-4">
-    <h2 class="text-2xl font-bold mb-4 border-b pb-2">My Github Projects</h2>
-    <div id="github-projects" class="grid gap-6 md:grid-cols-2">
-      <!-- GitHub projects will be loaded here -->
-    </div>
-  </section>
+			<i class='bx bx-menu' id="menu-icon"></i>
 
-  <script>
-    // GitHub Username
-    const githubUsername = "coderkhairul";
+			<nav class="navbar">
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#skills">Skills</a>
+				<a href="#services">Services</a>
+				<a href="#Contact">Contact</a>
+			</nav>
+		</header>
+		
+		<!-- home section design -->
+		 <section class="home" id="home">
+			<div class="home-content">
+				<h3>Hello, It's Me</h3>
+				<h1>Md. Khairul Islam</h1>
+				<h3>And I'm a <span>Frontend Developer and Graphic Designer</span></h3>
+				<p>I'm Md. Khairul Islam is an aspiring technology enthusiast on the path to becoming a software engineer. I am halfway through learning Python and constantly acquiring new technologies and tools. In addition, I work as a proficient graphic designer.</p>
+				<div class="social-media">
+					<a href="https://www.facebook.com/coderkhairul" target="_blank"><i class='bx bxl-facebook'></i></a>
+					<a href="#" target="_blank"><i class='bx bxl-twitter' ></i></a>
+					<a href="https://www.instagram.com/coderkhairul/"  target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+					<a href="https://www.linkedin.com/in/coderkhairul/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+				</div>
+				<a href="#" class="btn">Download CV</a>
+			</div>
 
-    // GitHub API URL
-    const apiURL = `https://api.github.com/users/${githubUsername}/repos`;
+			<div class="home-img">
+				<img src="images/profile.jpg" alt="Home images"
+			</div>
+		 </section>
 
-    // Function to fetch and display projects from GitHub
-    async function fetchGitHubProjects() {
-      try {
-        const response = await fetch(apiURL);
-        const data = await response.json();
+		 <!-- about secion design -->
+		<section class="about" id="about">
+			<div class="about-img">
+				<img src="images/about.jpg" alt="internet connection is poor">
+			</div>
+			<div class="about-content">
+				<h2 class="heading">About <span>Me</span></h2>
+				<h3>Frontend Developer and Graphic Design</h3>
+				<p>I’m a passionate Frontend Developer and Graphic Designer with a strong focus on creating visually appealing, user-friendly, and responsive websites. I love turning creative ideas into real-life digital experiences using technologies like HTML, CSS, Tailwind, JavaScript, React, and modern design tools like Adobe Photoshop, Illustrator, and Figma.
 
-        const projectsContainer = document.getElementById("github-projects");
+My journey started with a curiosity for design, which gradually evolved into a love for clean code and pixel-perfect UI. Whether it's building dynamic user interfaces or crafting engaging graphics, I always strive to blend design and development in perfect harmony.
 
-        data.forEach(project => {
-          const projectCard = document.createElement("div");
-          projectCard.classList.add("bg-white", "p-4", "rounded", "shadow");
+🚀 Currently, I’m working on sharpening my React and Next.js skills while also helping small businesses establish their online presence through both design and code.
 
-          const projectTitle = document.createElement("h3");
-          projectTitle.classList.add("text-lg", "font-semibold", "mb-1");
-          projectTitle.textContent = project.name;
+Let’s build something awesome together!
 
-          const projectDesc = document.createElement("p");
-          projectDesc.textContent = project.description || "No Description Yet";
-          const projectLink = document.createElement("a");
-          projectLink.href = project.html_url;
-          projectLink.target = "_blank";
-          projectLink.classList.add("text-blue-600", "hover:underline");
-          projectLink.textContent = "View Project";
+</p>
+				<a href="#"  class="btn">Read More</a>
+			</div>
+		</section>
 
-          projectCard.appendChild(projectTitle);
-          projectCard.appendChild(projectDesc);
-          projectCard.appendChild(projectLink);
+		<!-- services section design -->
+		 <section class="services" id="services">
+			<h2 class="heading">My <span>Services</span></h2>
 
-          projectsContainer.appendChild(projectCard);
-        });
-      } catch (error) {
-        console.error("Error fetching GitHub projects:", error);
-      }
-    }
+			<div class="services-container">
+				<div class="services-box">
+					<i class='bx bx-code-alt'></i>
+					<h3>Web Development</h3>
+					<p>I build fast, responsive, and visually engaging websites tailored to your brand and business goals. From simple landing pages to full-scale web applications, I ensure clean code, modern UI, and seamless user experiences.I can help bring your ideas to life on the web.</p>
+					<a href="#" class="btn">Read More</a>
+				</div>
+				<div class="services-box">
+					<i class='bx bxs-paint'></i>
+					<h3>Graphic Design</h3>
+					<p>I design visually compelling graphics that communicate your brand’s message effectively. From logos and social media posts to banners and business cards — I ensure every design is creative, consistent, and tailored to your unique identity. Let’s make your brand stand out with impactful visuals.</p>
+					<a href="#" class="btn">Read More</a>
+				</div>
+			</div>
+		 </section>
+		<!-- portfolio section design -->
+		 <section class="portfolio" id="portfolio">
+			<h2 class="heading">Latest <span>Projects</span></h2>
 
-    // Fetch GitHub Projects when the page loads
-    window.onload = fetchGitHubProjects;
-  </script>
-  <!-- LeetCode Summary Section -->
-<section id="leetcode" style="padding: 60px 20px; background: #f9fafc; font-family: 'Segoe UI', sans-serif;">
-  <div style="max-width: 900px; margin: auto; text-align: center;">
-    <h2 style="font-size: 36px; color: #222; margin-bottom: 20px;">🚀 Problem Solving Journey</h2>
-    <p style="font-size: 18px; color: #444; line-height: 1.7;">
-      I'm a competitive programming enthusiast currently solving problems on LeetCode using <strong>Python</strong>, transitioning from C/C++. Though I've started with just <strong>2 solved problem</strong>, my goal is to master <strong>Data Structures & Algorithms</strong> and become interview-ready. I believe that every step counts — and I'm committed to steady progress.
-    </p>
+			<div class="portfolio-container">
+				<div class="portfolio-box">
+					<img src="images/portfoli1.jpeg" alt="Network error!">
+					<div class="portfolio-layer">
+						<h4>Web Design</h4>
+						<p>I specialize in creating modern, responsive, and visually appealing websites that offer a smooth user experience. From landing pages to full-scale websites, each design is crafted with attention to detail, usability, and brand identity.</p>
+						<a href="#"><i class="bx bx-link-external"></i></a>
+					</div>
+				</div>
+				<div class="portfolio-box">
+					<img src="images/portfoli2.jpeg" alt="Network error!">
+					<div class="portfolio-layer">
+						<h4>Web Design</h4>
+						<p>I craft modern, responsive, and SEO-friendly websites tailored to client needs. My designs balance clean aesthetics with user-centric functionality. Whether you're a startup, small business, or personal brand, I can help build your digital presence with pixel-perfect precision.
 
-    <!-- Chart Container -->
-    <canvas id="leetcodeChart" width="300" height="300" style="margin-top: 30px;"></canvas>
+💡 Tools I use: HTML, CSS3, Tailwind CSS, JavaScript, Figma
 
-    <a href="https://leetcode.com/u/programmerkhairul/" target="_blank"
-       style="display: inline-block; margin-top: 30px; padding: 12px 24px; background: #FFA116; color: #fff;
-              border-radius: 8px; font-size: 16px; text-decoration: none; transition: 0.3s ease;">
-      🔗 View My LeetCode Profile
-    </a>
-  </div>
-</section>
-
-<!-- Chart.js CDN -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<script>
-  const ctx = document.getElementById('leetcodeChart').getContext('2d');
-  const leetcodeChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      labels: ['Easy', 'Medium', 'Hard'],
-      datasets: [{
-        label: 'Problems Solved',
-        data: [1, 1, 0], // Update this as your progress grows
-        backgroundColor: [
-          'rgba(54, 162, 235, 0.7)',
-          'rgba(255, 206, 86, 0.7)',
-          'rgba(255, 99, 132, 0.7)'
-        ],
-        borderColor: [
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(255, 99, 132, 1)'
-        ],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {
-          position: 'bottom',
-        },
-        title: {
-          display: true,
-          text: 'LeetCode Problem Breakdown'
-        }
-      }
-    }
-  });
-</script>
-  <!-- 📚 Personal Resources Section -->
-  <section id="personal-resources" class="max-w-4xl mx-auto my-12 p-4">
-    <h2 class="text-2xl font-bold mb-4 border-b pb-2">📚 Personal Resources</h2>
-    <p class="mb-4">In this section, I store my documents, useful links, and study materials:</p>
-    <ul class="list-disc list-inside space-y-2">
-      <!--<li><a href="#" class="text-blue-600 hover:underline">📄 National Identity Card (NID) Scan Copy</a></li>
-      <li><a href="#" class="text-blue-600 hover:underline">📘 Python Learning Notes</a></li>
-      <li><a href="#" class="text-blue-600 hover:underline">📁 Google Drive Folder (Study Materials)</a></li>
-      <li><a href="#" class="text-blue-600 hover:underline">🔗 LinkedIn Learning Course List</a></li>
-      <li><a href="#" class="text-blue-600 hover:underline">🧾 Academic Certificates</a></li>-->
-      <ol type = "I">📘 3rd Year 7th Summer Semester
-      <p>______________________________________</p>
-        <li><a href="https://drive.google.com/file/d/15FUpa7i4ncwu66M0e9oDsy6WN7JJHHav/view?usp=sharing" class="text-blue-600 hover:underline">🧾 Class Routine From Our SU ERP</a></li>
-        <li><a href="https://drive.google.com/file/d/1JyBq_kRFVm3qcycFE9KlYkXeNnwnBYQx/view?usp=sharing" class="text-blue-600 hover:underline">🧾 Class Routine & Google Classroom Code</a></li><br/>
-        <section class="max-w-xl mx-auto p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
-  <h2 class="text-2xl font-bold text-center mb-2 text-gray-900 dark:text-white">Class Routine Summary (29M1)</h2>
-  <p class="text-center text-gray-600 dark:text-gray-300 mb-6">Program: B.Sc. in CSE | Semester: Summer 2025</p>
-  <div class="space-y-4">
-    <!-- Saturday -->
-    <div class="border rounded-lg overflow-hidden dark:border-gray-700">
-      <input type="checkbox" id="sat" class="peer hidden" />
-      <label for="sat" class="flex justify-between items-center p-4 bg-blue-100 dark:bg-blue-900 cursor-pointer">
-        <span class="font-semibold text-blue-900 dark:text-blue-100">Saturday</span>
-        <span class="text-blue-600 dark:text-blue-300 peer-checked:rotate-90 transition-transform">&#9656;</span>
-      </label>
-      <div class="max-h-0 peer-checked:max-h-96 transition-all overflow-hidden bg-gray-50 dark:bg-gray-700">
-        <ul class="p-4 space-y-2 text-gray-800 dark:text-gray-200">
-          <li><strong>Microprocessor Sessional:</strong> 08:00am - 10:00am | Md. Ashfakur Rahman | Room: West-611</li>
-          <li><strong>Microprocessor Theory:</strong> 10:00am - 11:00am | Md. Ashfakur Rahman | Room: West-512</li>
-          <li><strong>Algorithms Theory:</strong> 11:00am - 12:00pm | Md. Sahidulla | Room: West-512</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Monday -->
-    <div class="border rounded-lg overflow-hidden dark:border-gray-700">
-      <input type="checkbox" id="mon" class="peer hidden" />
-      <label for="mon" class="flex justify-between items-center p-4 bg-blue-100 dark:bg-blue-900 cursor-pointer">
-        <span class="font-semibold text-blue-900 dark:text-blue-100">Monday</span>
-        <span class="text-blue-600 dark:text-blue-300 peer-checked:rotate-90 transition-transform">&#9656;</span>
-      </label>
-      <div class="max-h-0 peer-checked:max-h-96 transition-all overflow-hidden bg-gray-50 dark:bg-gray-700">
-        <ul class="p-4 space-y-2 text-gray-800 dark:text-gray-200">
-          <li><strong>Algorithms Sessional:</strong> 08:00am - 10:00am | Md. Sahidulla | Room: West-602</li>
-          <li><strong>Algorithms Theory:</strong> 10:00am - 11:00am | Md. Sahidulla | Room: West-512</li>
-          <li><strong>Numerical Methods Theory:</strong> 11:00am - 12:00pm | Jannatul Ferdouse | Room: West-512</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Tuesday -->
-    <div class="border rounded-lg overflow-hidden dark:border-gray-700">
-      <input type="checkbox" id="tue" class="peer hidden" />
-      <label for="tue" class="flex justify-between items-center p-4 bg-blue-100 dark:bg-blue-900 cursor-pointer">
-        <span class="font-semibold text-blue-900 dark:text-blue-100">Tuesday</span>
-        <span class="text-blue-600 dark:text-blue-300 peer-checked:rotate-90 transition-transform">&#9656;</span>
-      </label>
-      <div class="max-h-0 peer-checked:max-h-96 transition-all overflow-hidden bg-gray-50 dark:bg-gray-700">
-        <ul class="p-4 space-y-2 text-gray-800 dark:text-gray-200">
-          <li><strong>Numerical Methods Sessional:</strong> 08:00am - 10:00am | Jannatul Ferdouse | Room: West-611</li>
-          <li><strong>Numerical Methods Theory:</strong> 10:00am - 11:00am | Jannatul Ferdouse | Room: West-509</li>
-          <li><strong>Microprocessor Theory:</strong> 11:00am - 12:00pm | Md. Ashfakur Rahman | Room: West-509</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <br/>
-                <section class="max-w-xl mx-auto p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
-  <h2 class="text-2xl font-bold text-center mb-2 text-gray-900 dark:text-white">Class Notice (29M1)</h2>
-  <div class="space-y-4">
-    <div class="border rounded-lg overflow-hidden dark:border-gray-700">
-      <input type="checkbox" id="tue" class="peer hidden" />
-      <label for="tue" class="flex justify-between items-center p-4 bg-blue-100 dark:bg-blue-900 cursor-pointer">
-        <span class="font-semibold text-blue-900 dark:text-blue-100">♦️ There is no notice in the present </span>
-      </label>
-    </div>
-  </div>
-</section>
-
-        <br/>
-
-        <li><a href="https://drive.google.com/file/d/1dNXwe4-bZGMH1sgxAkyqYLelp1d7WaLn/view?usp=sharing" class="text-blue-600 hover:underline">🧾 Google Classroom Code</a></li>
-        
-        <li><a href="https://drive.google.com/file/d/1rKci5bzpplsQXQYRxyThcgBdnct1dMZg/view?usp=sharing" class="text-blue-600 hover:underline">🧾Microprossor & Assembly Language Programming Sessional Program Code </a></li><br/>
-        <ul class="list-disc list-inside space-y-2">
-        <h2>1. Subject: Numerical Method Theory (i)</h2>
-          <script src="//onlinegdb.com/embed/js/VIaXVRm1r?theme=undefined"></script>
-          <script src="//onlinegdb.com/embed/js/IgLmBwj4t?theme=dark"></script>
-        </ul><br/>
-        <ul class="list-disc list-inside space-y-2">
-        <h2>1. Subject: Numerical Method Sessional (ii)</h2>
-          <li><a href="https://www.onlinegdb.com/myfiles/fGmIzV7qq" class="text-blue-600 hover:underline">📄 All Code Folder</a></li>
-          <li><a href="https://onlinegdb.com/VIaXVRm1r" class="text-blue-600 hover:underline">📄Lab Class Code_1</a></li><script src="//onlinegdb.com/embed/js/VIaXVRm1r?theme=undefined"></script>
-          <li><a href="https://onlinegdb.com/VIaXVRm1r" class="text-blue-600 hover:underline">📄Lab Class Code_2</a></li><script src="//onlinegdb.com/embed/js/IgLmBwj4t?theme=dark"></script>
-        </ul><br/>
-        <ul class="list-disc list-inside space-y-2">
-        <h2>2(i). Subject: Microprocessor and Assembly Language Programming Sessional</h2>
-          <li><a href="https://drive.google.com/file/d/16_aEWHLzKPk5m2R27mKS-7C3fFS0N6oX/">📄 Course outlines</a></li>
-          <li><a href="https://drive.google.com/file/d/1-AB98m_yNx5CJ2KxovK3CW2cjBCEbnxQ/view?usp=sharing">📄 Software</a></li>
-          <li><a href="https://drive.google.com/file/d/19Jt3_2q8sgduFgCxMnHDROJt4nzOprYz/view?usp=sharing">📄 Software Key</a></li>
-          <li><a href="https://www.onlinegdb.com/myfiles/uuaODXmut">📄 All Code Folder</a></li>
-          <li><a href="https://onlinegdb.com/WkeLh4ecs3" class="text-blue-600 hover:underline">📄Lab Class Code_1</a></li><script src="//onlinegdb.com/embed/js/WkeLh4ecs3?theme=dark"></script>
-        </ul><br/>
-        <ul class="list-disc list-inside space-y-2">
-        <h2>2(ii). Subject: Microprocessor and Assembly Language Programming Theory</h2>
-        <li><a href="https://drive.google.com/file/d/16ciQlCPOef36M0npJVkgKrA58RAVHo81/">📄 Course outlines</a></li>
-        </ul><br/>
-        <ul class="list-disc list-inside space-y-2">
-        <h2>3(i). Subject: Algorithms Theory</h2>
-        <li><a href="https://drive.google.com/drive/folders/1DiowsJbpqMkjuRwEo2fcd5TvNhXw8zt3?usp=drive_link">📄 Source Folder</a></li>
-        </ul>
-        <ul class="list-disc list-inside space-y-2">
-        <h2>3(ii). Subject: Algorithms Sessional</h2>
-        <li><a href="https://onlinegdb.com/WjdtcaYSW">📄 All Code Folder</a></li>
-        <li><a href="https://onlinegdb.com/WkeLh4ecs3" class="text-blue-600 hover:underline">📄 Linear Search Implementation</a></li><script src="//onlinegdb.com/embed/js/dMtFqMNEm?theme=undefined"></script>
-  </section>
-  <!--Personal Dashboard--> 
-  <section id="personalDashboard" style="margin: 20px auto; max-width: 600px; font-family: 'Segoe UI', sans-serif;">
-  <div 
-    id="mainContent" 
-    style="
-      background-color: rgba(0,0,0,0.6);
-      color: #fff;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      box-sizing: border-box;
-      "
-  >
-    <h1 style="margin-top: 0; font-size: 1.8em;">👤 Notepad</h1>
-    <p id="datetime"></p>
-    <textarea id="noteArea" placeholder="Write your notes here..." 
-      style="
-        width: 100%;
-        padding: 10px;
-        border-radius: 8px;
-        border: none;
-        resize: none;
-        font-size: 1em;
-        box-sizing: border-box;
-        min-height: 200px;
-        background: transparent;
-        color: inherit;
-      "
-    ></textarea>
-    <div class="button-group" style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
-      <button id="saveBtn" 
-        style="
-          padding: 10px 15px;
-          font-size: 1em;
-          border: none;
-          border-radius: 8px;
-          background-color: #1abc9c;
-          color: white;
-          cursor: pointer;
-          flex: 1 1 auto;
-          white-space: nowrap;
-        "
-      >💾 Save</button>
-
-      <button id="exportBtn"
-        style="
-          padding: 10px 15px;
-          font-size: 1em;
-          border: none;
-          border-radius: 8px;
-          background-color: #1abc9c;
-          color: white;
-          cursor: pointer;
-          flex: 1 1 auto;
-          white-space: nowrap;
-        "
-      >⬇️ Export</button>
-
-      <label for="importFile" 
-        style="
-          cursor: pointer;
-          padding: 10px 15px;
-          background-color: #3498db;
-          color: white;
-          border-radius: 8px;
-          font-size: 1em;
-          flex: 1 1 auto;
-          white-space: nowrap;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        "
-      >📂 Import</label>
-      <input type="file" id="importFile" accept=".txt" style="display:none;" />
-      
-      <button id="themeToggle" 
-        style="
-          padding: 10px 15px;
-          font-size: 1em;
-          border: none;
-          border-radius: 8px;
-          background-color: #1abc9c;
-          color: white;
-          cursor: pointer;
-          flex: 1 1 auto;
-          white-space: nowrap;
-        "
-      >🌓 Theme</button>
-    </div>
-    <div id="lastSaved" style="font-size: 0.9em; margin-top: 5px; color: #ccc;">Last saved: Not yet</div>
-    <hr />
-    <h3>📂 My Files & Links</h3>
-    <ul style="padding-left: 20px; color: inherit;">
-      <li style="margin-bottom: 5px;"><a href="diary/index.html" target="_blank" style="color: inherit; text-decoration:none;">📖 Personal Diary</a></li>
-      <li style="margin-bottom: 5px;"><a href="projects/index.html" target="_blank" style="color: inherit; text-decoration:none;">💻 Projects</a></li>
-      <li style="margin-bottom: 5px;"><a href="documents/resume.pdf" target="_blank" style="color: inherit; text-decoration:none;">📄 My Resume</a></li>
-      <li style="margin-bottom: 5px;"><a href="images/" target="_blank" style="color: inherit; text-decoration:none;">🖼️ Image Folder</a></li>
-      <li style="margin-bottom: 5px;"><a href="http://sue.su.edu.bd:5081/sonargaon_erp/" target="_blank" style="color: inherit; text-decoration:none;">💬 SU ERP</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://www.youtube.com/watch?v=s7lGvDoic-I&list=PLGdUCUc7fa7FGl2sQMKDeeDt3A7UKiiJQ&ab_channel=MuhammadAlamin" target="_blank" style="color: inherit; text-decoration:none;">💬 How To Login Sonargaon University (SU) Students ERP Panel || সোনারগাঁও বিশ্ববিদ্যালয়</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://translate.google.com/" target="_blank" style="color: inherit; text-decoration:none;">📖 Google Translate</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://10fastfingers.com/" target="_blank" style="color: inherit; text-decoration:none;">📖 Typing Practice</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://www.devjobsscanner.com/blog/top-8-most-demanded-programming-languages/" target="_blank" style="color: inherit; text-decoration:none;">💬 Top 8 Most Demanded Programming Languages in 2024</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://www.youtube.com/watch?v=b9eMGE7QtTk&list=PLXE2Bj4edhg40XZPnk-vSkLy_RtmBR3lp&ab_channel=JavaScriptMastery" target="_blank" style="color: inherit; text-decoration:none;">📖 Fronted Developer</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://www.youtube.com/watch?v=ADFDxhipgiI&list=PLgH5QX0i9K3p06YY1fyReA2UK8mh_zsiY&index=1&ab_channel=AnisulIslam" target="_blank" style="color: inherit; text-decoration:none;">📖 MERN Full-stack Web development</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://eidfestival-bfc09.web.app/login" target="_blank" style="color: inherit; text-decoration:none;">📖 404 Squad</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://www.youtube.com/watch?v=V1Fc2vJC1II&ab_channel=AbuNomanBasar" target="_blank" style="color: inherit; text-decoration:none;">📖 Django Full Course in 12 Hours</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://www.youtube.com/watch?v=rfscVS0vtbw&ab_channel=freeCodeCamp.org" target="_blank" style="color: inherit; text-decoration:none;">📖 Learn Python - Full Course for Beginners [Tutorial]</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://chatgpt.com/c/680992da-3748-8010-8003-129665b37c5e" target="_blank" style="color: inherit; text-decoration:none;">📖 Python Learn From ChatGPT</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://www.youtube.com/watch?v=8mAITcNt710&ab_channel=freeCodeCamp.org" target="_blank" style="color: inherit; text-decoration:none;">📖 Harvard CS50 – Full Computer Science University Course</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://www.youtube.com/watch?v=LfaMVlDaQ24&ab_channel=freeCodeCamp.org" target="_blank" style="color: inherit; text-decoration:none;">📖 Harvard CS50 (2023) – Full Computer Science University Course</a></li>
-      rgin-bottom: 5px;"><a href="https://www.youtube.com/watch?v=nLRL_NcnK-4&ab_channel=freeCodeCamp.org" target="_blank" style="color: inherit; text-decoration:none;">📖 Harvard CS50’s Introduction to Programming with Python – Full University Course</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://python.howtocode.dev/" target="_blank" style="color: inherit; text-decoration:none;">📖 বাংলায় পাইথন</a></li>
-       <li style="margin-bottom: 5px;"><a href="https://python.maateen.me/" target="_blank" style="color: inherit; text-decoration:none;">📖 সহজ ভাষায় পাইথন</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://www.youtube.com/playlist?list=PLkyGuIcLcmx0NDDhUydksZTsCWE_4daBJ" target="_blank" style="color: inherit; text-decoration:none;">📖 FOUNDATION OF সফটওয়্যার ইঞ্জিনিয়ারিং</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://github.com/me-shaon/bangla-programming-resources" target="_blank" style="color: inherit; text-decoration:none;">📖 বাংলায় প্রোগ্রামিং রিসোর্সসমূহ</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-bn.md" target="_blank" style="color: inherit; text-decoration:none;">📖 free-programming-books</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://hukush-pakush.com/" target="_blank" style="color: inherit; text-decoration:none;">📖 হুকুশ পাকুশের
-প্রোগ্রামিং শিক্ষা</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://www.lookuptables.com/text/ascii-table" target="_blank" style="color: inherit; text-decoration:none;">📖 ASCII Table</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://books.google.com/" target="_blank" style="color: inherit; text-decoration:none;">📖 Google Books</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://chatgpt.com/" target="_blank" style="color: inherit; text-decoration:none;">💬 ChatGPT</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://web.whatsapp.com/" target="_blank" style="color: inherit; text-decoration:none;">💬 WhatsApp</a></li>
-      <li style="margin-bottom: 5px;"><a href="http://192.168.0.1/" target="_blank" style="color: inherit; text-decoration:none;">💻 	
-TP-Link</a></li>
-      <li style="margin-bottom: 5px;"><a href="https://www.facebook.com/Asi.Mdabdulkadir" target="_blank" style="color: inherit; text-decoration:none;">💻 	
-Asi Bangladesh Police Gulshan DMP (MD ABDUL KADIR)</a></li>
-    </ul>
-  </div>
-
-  <script>
-    (function() {
-      const section = document.getElementById('personalDashboard');
-      const mainContent = section.querySelector('#mainContent');
-      const noteArea = section.querySelector('#noteArea');
-      const datetimeP = section.querySelector('#datetime');
-      const lastSavedDiv = section.querySelector('#lastSaved');
-      const themeToggleBtn = section.querySelector('#themeToggle');
-      const saveBtn = section.querySelector('#saveBtn');
-      const exportBtn = section.querySelector('#exportBtn');
-      const importFileInput = section.querySelector('#importFile');
-
-      function showDateTime() {
-        const now = new Date();
-        datetimeP.innerText = "Login time: " + now.toLocaleString();
-      }
-
-      function saveNote() {
-        const note = noteArea.value;
-        localStorage.setItem("my_note", note);
-        const timestamp = new Date().toLocaleTimeString();
-        localStorage.setItem("last_saved", timestamp);
-        lastSavedDiv.innerText = "Last saved: " + timestamp;
-      }
-
-      function loadNote() {
-        const savedNote = localStorage.getItem("my_note") || "";
-        noteArea.value = savedNote;
-
-        const lastSaved = localStorage.getItem("last_saved");
-        if (lastSaved) {
-          lastSavedDiv.innerText = "Last saved: " + lastSaved;
-        }
-      }
-
-      function exportNote() {
-        const note = noteArea.value;
-        const blob = new Blob([note], { type: "text/plain" });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "my_note_backup.txt";
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-      }
-
-      function importNote(event) {
-        const file = event.target.files[0];
-        if (file && file.type === "text/plain") {
-          const reader = new FileReader();
-          reader.onload = function(e) {
-            noteArea.value = e.target.result;
-            saveNote();
-          };
-          reader.readAsText(file);
-        } else {
-          alert("❗ Please upload a valid .txt file");
-        }
-      }
-
-      function toggleTheme() {
-        const current = localStorage.getItem("theme") || "dark";
-        const newTheme = current === "dark" ? "light" : "dark";
-
-        if (newTheme === "dark") {
-          section.style.background = "linear-gradient(to right, #2c3e50, #4ca1af)";
-          section.style.color = "#fff";
-          mainContent.style.backgroundColor = "rgba(0,0,0,0.6)";
-          mainContent.style.color = "#fff";
-          noteArea.style.background = "transparent";
-          noteArea.style.color = "#fff";
-        } else {
-          section.style.background = "linear-gradient(to right, #f5f7fa, #c3cfe2)";
-          section.style.color = "#000";
-          mainContent.style.backgroundColor = "rgba(255,255,255,0.9)";
-          mainContent.style.color = "#000";
-          noteArea.style.background = "transparent";
-          noteArea.style.color = "#000";
-        }
-
-        localStorage.setItem("theme", newTheme);
-        updateThemeIcon(newTheme);
-      }
-
-      function updateThemeIcon(theme) {
-        themeToggleBtn.innerText = theme === "dark" ? "🌞 Light" : "🌙 Dark";
-      }
-
-      function applySavedTheme() {
-        const savedTheme = localStorage.getItem("theme") || "dark";
-
-        if (savedTheme === "dark") {
-          section.style.background = "linear-gradient(to right, #2c3e50, #4ca1af)";
-          section.style.color = "#fff";
-          mainContent.style.backgroundColor = "rgba(0,0,0,0.6)";
-          mainContent.style.color = "#fff";
-          noteArea.style.background = "transparent";
-          noteArea.style.color = "#fff";
-        } else {
-          section.style.background = "linear-gradient(to right, #f5f7fa, #c3cfe2)";
-          section.style.color = "#000";
-          mainContent.style.backgroundColor = "rgba(255,255,255,0.9)";
-          mainContent.style.color = "#000";
-          noteArea.style.background = "transparent";
-          noteArea.style.color = "#000";
-        }
-        updateThemeIcon(savedTheme);
-      }
-
-      // Event listeners
-      saveBtn.addEventListener('click', saveNote);
-      exportBtn.addEventListener('click', exportNote);
-      importFileInput.addEventListener('change', importNote);
-      themeToggleBtn.addEventListener('click', toggleTheme);
-
-      // Auto save every 10 sec
-      setInterval(saveNote, 10000);
-
-      // On load
-      showDateTime();
-      loadNote();
-      applySavedTheme();
-    })();
-  </script>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="max-w-4xl mx-auto my-12 p-4">
-    <h2 class="text-2xl font-bold mb-4 border-b pb-2">Contact</h2>
-    <p class="mb-2">📧 Email: khairulislam7879@gmail.com</p>
-    <p>🔗 GitHub: <a href="https://github.com/coderkhairul" class="text-blue-600 hover:underline">github.com/coderkhairul</a></p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-white p-4 text-center text-sm text-gray-500">
-    © 2025 Md. Khairul Islam - All Rights Reserved
-  </footer>
-
-</body>
+🎯 Goal: Design that not only looks great but also performs seamlessly across all devices.</p>
+						<a href="#"><i class="bx bx-link-external"></i></a>
+					</div>
+				</div>
+				<div class="portfolio-box">
+					<img src="images/portfoli3.jpeg" alt="Network error!">
+					<div class="portfolio-layer">
+						<h4>Web Design</h4>
+						<p>I design clean, modern, and user-friendly websites that not only look beautiful but also deliver smooth and responsive experiences.</p>
+						<a href="#"><i class="bx bx-link-external"></i></a>
+					</div>
+				</div>
+				<div class="portfolio-box">
+					<img src="images/portfoli4.jpeg" alt="Network error!">
+					<div class="portfolio-layer">
+						<h4>Web Design</h4>
+						<p>I specialize in creating modern, responsive, and visually appealing websites that offer a smooth user experience. From landing pages to full-scale websites, each design is crafted with attention to detail, usability, and brand identity.</p>
+						<a href="#"><i class="bx bx-link-external"></i></a>
+					</div>
+				</div>
+				<div class="portfolio-box">
+					<img src="images/portfoli5.jpeg" alt="Network error!">
+					<div class="portfolio-layer">
+						<h4>Web Design</h4>
+						<p>I specialize in creating modern, responsive, and visually appealing websites that offer a smooth user experience. From landing pages to full-scale websites, each design is crafted with attention to detail, usability, and brand identity.</p>
+						<a href="#"><i class="bx bx-link-external"></i></a>
+					</div>
+				</div>
+				<div class="portfolio-box">
+					<img src="images/portfoli6.jpeg" alt="Network error!">
+					<div class="portfolio-layer">
+						<h4>Web Design</h4>
+						<p>I specialize in creating modern, responsive, and visually appealing websites that offer a smooth user experience. From landing pages to full-scale websites, each design is crafted with attention to detail, usability, and brand identity.</p>
+						<a href="#"><i class="bx bx-link-external"></i></a>
+					</div>
+				</div>
+			</div>
+		 </section>
+		<!-- custom js -->
+		<script src="js/script.js"></script>
+	</body>
 </html>
